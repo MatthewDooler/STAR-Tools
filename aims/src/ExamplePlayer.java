@@ -131,7 +131,7 @@ public class ExamplePlayer extends Thread
 	 */
 	public static void main(String[] args)
 	{
-		String url = "https://standrewsradio.com:8080/stream/1.ogg";
+		String url = "http://stream.standrewsradio.com:8080/stream/1.ogg";
 		ExamplePlayer examplePlayer = new ExamplePlayer(url);
 		examplePlayer.start();
 	}
@@ -152,7 +152,7 @@ public class ExamplePlayer extends Thread
 			periodsStr += period + ",";
 		}
 		try {
-			URL url = new URL("http://standrewsradio.com/admin?xmlhttprequest&func=send-aims-notification&silent-periods=" + periodsStr);
+			URL url = new URL("https://standrewsradio.com/admin?xmlhttprequest&func=send-aims-notification&silent-periods=" + periodsStr);
 		    InputStream is = url.openConnection().getInputStream();
 	
 		    BufferedReader reader = new BufferedReader( new InputStreamReader( is )  );
