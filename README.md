@@ -1,4 +1,4 @@
-STAR-Tools
+STAR Tools
 ==========
 
 Miscellaneous radio tools
